@@ -6,13 +6,13 @@ public class CalculadoraPA_PG {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Digite o valor inicial: ");
+        System.out.print("Por favor, digite o valor numérico inteiro inicial: ");
         int valorInicial = scanner.nextInt();
 
         System.out.print("Digite a raiz: ");
         int raiz = scanner.nextInt();
 
-        System.out.print("Deseja calcular P.A. ou P.G.? (Digite 'PA' ou 'PG'): ");
+        System.out.print("Você deseja calcular a PA ou a PG?");
         String escolha = scanner.next().toUpperCase();
 
         System.out.println("Os 10 primeiros termos são:");

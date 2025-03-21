@@ -10,11 +10,11 @@ public class QualidadeAr {
         Scanner scanner = new Scanner(System.in);
 
         for (int i = 0; i < cidades.length; i++) {
-            System.out.print("Digite o índice de qualidade do ar para " + cidades[i] + ": ");
+            System.out.print("Por favor, digite o índice de qualidade do ar para " + cidades[i] + ": ");
             indicesQualidade[i] = scanner.nextInt();
         }
 
-        System.out.println("Cidades com índice de qualidade do ar acima do limite seguro (100):");
+        System.out.println("Cidades com índice de qualidade do ar acima do limite seguro estipulado (100):");
         boolean encontrou = false;
 
         for (int i = 0; i < cidades.length; i++) {

@@ -9,11 +9,11 @@ public class ConsumoEnergia {
         ArrayList<Double> consumoMensal = new ArrayList<>();
         final double LIMITE_SUSTENTAVEL = 200.0;
 
-        System.out.print("Quantos meses de consumo deseja informar?");
+        System.out.print("Quantos meses de consumo você deseja informar?");
         int meses = scanner.nextInt();
 
         for (int i = 1; i <= meses; i++) {
-            System.out.printf("Digite o consumo do mês %d (em kWh): ", i);
+            System.out.printf("Por favor, digite o consumo do mês %d (em kWh): ", i);
             double consumo = scanner.nextDouble();
             consumoMensal.add(consumo);
         }
@@ -28,7 +28,7 @@ public class ConsumoEnergia {
         System.out.printf("O consumo médio de energia é: %.2f kWh/mês%n", mediaConsumo);
 
         if (mediaConsumo > LIMITE_SUSTENTAVEL) {
-            System.out.println("Atenção! O consumo está acima do limite sustentável.");
+            System.out.println("O consumo está acima do limite sustentável!");
         } else {
             System.out.println("O consumo está dentro do limite sustentável.");
         }

@@ -19,7 +19,7 @@ public class MediaFinal {
 
         double media = (nota1 + nota2 + nota3) / 3;
 
-        System.out.printf("Sua média final é: %.2f\n", media);
+        System.out.printf("A sua média final é: %.2f\n", media);
 
         scanner.close();
     }

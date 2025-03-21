@@ -15,7 +15,7 @@ public class TemperaturaMedia {
 
         DecimalFormat df = new DecimalFormat("#,##0.00");
 
-        System.out.println("Temperaturas registradas na semana:");
+        System.out.println("Temperaturas registrada na semana:");
         for (int i = 0; i < temperaturas.length; i++) {
             System.out.println("Dia " + (i+1) + ": " + df.format(temperaturas[i]) + "°C");
         }

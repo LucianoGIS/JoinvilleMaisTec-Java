@@ -8,7 +8,7 @@ public class Calculadora {
         Locale localeBr = Locale.of("pt", "BR");
         Scanner scanner = new Scanner(System.in).useLocale(localeBr);
 
-        System.out.print("Digite o primeiro número: ");
+        System.out.print("Por favor, digite o primeiro número: ");
         double num1 = scanner.nextDouble();
 
         System.out.print("Digite o segundo número: ");
@@ -34,12 +34,12 @@ public class Calculadora {
                 if (num2 != 0) {
                     resultado = num1 / num2;
                 } else {
-                    System.out.println("Erro: divisão por zero não é permitida.");
+                    System.out.println("Erro: a divisão por zero não é permitida!");
                     operacaoValida = false;
                 }
                 break;
             default:
-                System.out.println("Erro: operação inválida.");
+                System.out.println("Erro: a operação é inválida!");
                 operacaoValida = false;
         }
 

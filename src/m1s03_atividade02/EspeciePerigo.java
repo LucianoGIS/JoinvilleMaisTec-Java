@@ -8,7 +8,7 @@ public class EspeciePerigo {
         String[] especiesAmeacadas = {"Papagaio-verdadeiro", "Lobo-guará", "Tamanduá-bandeira", "Mico-leão-dourado", "Onça-pintada"};
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Digite o nome da espécie para verificar se está em risco de extinção: ");
+        System.out.print("Por favor, digite o nome da espécie para verificar se está em risco de extinção: ");
         String especieUsuario = normalizarTexto(scanner.nextLine());
 
         boolean encontrada = false;

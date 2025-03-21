@@ -9,7 +9,7 @@ public class RoteiroTrilha {
         ArrayList<String> paradas = new ArrayList<>();
 
         while (true) {
-            System.out.println("Deseja adicionar uma nova parada? (sim/não)");
+            System.out.println("Você deseja adicionar uma nova parada? (sim/não)");
             String resposta = scanner.nextLine();
 
             if (resposta.equalsIgnoreCase("não")) {
@@ -19,7 +19,7 @@ public class RoteiroTrilha {
             System.out.println("Informe o nome da parada:");
             String nomeParada = scanner.nextLine();
 
-            System.out.println("Informe a posição onde deseja adicionar a parada, sendo 1 para início, 2 para segunda posição e assim por diante ou 'fim' para adicionar ao final:");
+            System.out.println("Informe a posição onde deseja adicionar a parada, sendo 1 para início, 2 para a segunda posição e assim por diante ou 'fim' para adicionar o final:");
             String posicao = scanner.nextLine();
 
             if (posicao.equalsIgnoreCase("fim")) {
@@ -30,7 +30,7 @@ public class RoteiroTrilha {
                     if (index >= 0 && index <= paradas.size()) {
                         paradas.add(index, nomeParada);
                     } else {
-                        System.out.println("Posição inválida. A parada será adicionada no final.");
+                        System.out.println("Posição inválida! A parada será adicionada no final.");
                         paradas.add(nomeParada);
                     }
                 } catch (NumberFormatException e) {
